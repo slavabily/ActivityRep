@@ -13,6 +13,9 @@
 		B98FAE5224D95E0300974D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98FAE5124D95E0300974D20 /* Assets.xcassets */; };
 		B98FAE5524D95E0300974D20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98FAE5424D95E0300974D20 /* Preview Assets.xcassets */; };
 		B98FAE5824D95E0300974D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98FAE5624D95E0300974D20 /* LaunchScreen.storyboard */; };
+		B9D1D6BF24D9787D005FC2C0 /* RingBackgroundShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */; };
+		B9D1D6C124D97E4C005FC2C0 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */; };
+		B9D1D6C324D985E9005FC2C0 /* RingTipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B98FAE5424D95E0300974D20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B98FAE5724D95E0300974D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B98FAE5924D95E0300974D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBackgroundShape.swift; sourceTree = "<group>"; };
+		B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
+		B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingTipShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				B98FAE4B24D95DFE00974D20 /* AppDelegate.swift */,
 				B98FAE4D24D95DFE00974D20 /* SceneDelegate.swift */,
 				B98FAE4F24D95DFE00974D20 /* ContentView.swift */,
+				B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */,
+				B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */,
+				B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */,
 				B98FAE5124D95E0300974D20 /* Assets.xcassets */,
 				B98FAE5624D95E0300974D20 /* LaunchScreen.storyboard */,
 				B98FAE5924D95E0300974D20 /* Info.plist */,
@@ -146,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98FAE4C24D95DFE00974D20 /* AppDelegate.swift in Sources */,
+				B9D1D6C324D985E9005FC2C0 /* RingTipShape.swift in Sources */,
+				B9D1D6C124D97E4C005FC2C0 /* RingShape.swift in Sources */,
+				B9D1D6BF24D9787D005FC2C0 /* RingBackgroundShape.swift in Sources */,
 				B98FAE4E24D95DFE00974D20 /* SceneDelegate.swift in Sources */,
 				B98FAE5024D95DFE00974D20 /* ContentView.swift in Sources */,
 			);
