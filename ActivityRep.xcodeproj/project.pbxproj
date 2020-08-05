@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B945C52324DA7DD4001EA436 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52224DA7DD4001EA436 /* RingView.swift */; };
+		B945C52524DA8C2F001EA436 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52424DA8C2F001EA436 /* Constants.swift */; };
+		B945C52724DA8D5B001EA436 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52624DA8D5B001EA436 /* ActivityData.swift */; };
+		B945C52924DA95BE001EA436 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52824DA95BE001EA436 /* ColorExtension.swift */; };
 		B98FAE4C24D95DFE00974D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FAE4B24D95DFE00974D20 /* AppDelegate.swift */; };
 		B98FAE4E24D95DFE00974D20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FAE4D24D95DFE00974D20 /* SceneDelegate.swift */; };
 		B98FAE5024D95DFE00974D20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FAE4F24D95DFE00974D20 /* ContentView.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B945C52224DA7DD4001EA436 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		B945C52424DA8C2F001EA436 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B945C52624DA8D5B001EA436 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
+		B945C52824DA95BE001EA436 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		B98FAE4824D95DFE00974D20 /* ActivityRep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityRep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98FAE4B24D95DFE00974D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B98FAE4D24D95DFE00974D20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +72,11 @@
 			children = (
 				B98FAE4B24D95DFE00974D20 /* AppDelegate.swift */,
 				B98FAE4D24D95DFE00974D20 /* SceneDelegate.swift */,
+				B945C52424DA8C2F001EA436 /* Constants.swift */,
+				B945C52624DA8D5B001EA436 /* ActivityData.swift */,
+				B945C52824DA95BE001EA436 /* ColorExtension.swift */,
 				B98FAE4F24D95DFE00974D20 /* ContentView.swift */,
+				B945C52224DA7DD4001EA436 /* RingView.swift */,
 				B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */,
 				B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */,
 				B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */,
@@ -154,12 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B945C52724DA8D5B001EA436 /* ActivityData.swift in Sources */,
 				B98FAE4C24D95DFE00974D20 /* AppDelegate.swift in Sources */,
 				B9D1D6C324D985E9005FC2C0 /* RingTipShape.swift in Sources */,
 				B9D1D6C124D97E4C005FC2C0 /* RingShape.swift in Sources */,
 				B9D1D6BF24D9787D005FC2C0 /* RingBackgroundShape.swift in Sources */,
+				B945C52324DA7DD4001EA436 /* RingView.swift in Sources */,
 				B98FAE4E24D95DFE00974D20 /* SceneDelegate.swift in Sources */,
 				B98FAE5024D95DFE00974D20 /* ContentView.swift in Sources */,
+				B945C52524DA8C2F001EA436 /* Constants.swift in Sources */,
+				B945C52924DA95BE001EA436 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
