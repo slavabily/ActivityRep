@@ -11,15 +11,18 @@
 		B945C52524DA8C2F001EA436 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52424DA8C2F001EA436 /* Constants.swift */; };
 		B945C52724DA8D5B001EA436 /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52624DA8D5B001EA436 /* ActivityData.swift */; };
 		B945C52924DA95BE001EA436 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B945C52824DA95BE001EA436 /* ColorExtension.swift */; };
+		B9773BA124DD2394006812B3 /* StandChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9773BA024DD2394006812B3 /* StandChartView.swift */; };
 		B98FAE4C24D95DFE00974D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FAE4B24D95DFE00974D20 /* AppDelegate.swift */; };
 		B98FAE4E24D95DFE00974D20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FAE4D24D95DFE00974D20 /* SceneDelegate.swift */; };
 		B98FAE5024D95DFE00974D20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98FAE4F24D95DFE00974D20 /* ContentView.swift */; };
 		B98FAE5224D95E0300974D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98FAE5124D95E0300974D20 /* Assets.xcassets */; };
 		B98FAE5524D95E0300974D20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98FAE5424D95E0300974D20 /* Preview Assets.xcassets */; };
 		B98FAE5824D95E0300974D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B98FAE5624D95E0300974D20 /* LaunchScreen.storyboard */; };
+		B992260624DAA7A4004F3343 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B992260524DAA7A4004F3343 /* ChartView.swift */; };
 		B9D1D6BF24D9787D005FC2C0 /* RingBackgroundShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */; };
 		B9D1D6C124D97E4C005FC2C0 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */; };
 		B9D1D6C324D985E9005FC2C0 /* RingTipShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */; };
+		B9D7ADFC24DD4085005E31DF /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7ADFB24DD4085005E31DF /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,7 @@
 		B945C52424DA8C2F001EA436 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B945C52624DA8D5B001EA436 /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		B945C52824DA95BE001EA436 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B9773BA024DD2394006812B3 /* StandChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandChartView.swift; sourceTree = "<group>"; };
 		B98FAE4824D95DFE00974D20 /* ActivityRep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityRep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98FAE4B24D95DFE00974D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B98FAE4D24D95DFE00974D20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +39,11 @@
 		B98FAE5424D95E0300974D20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B98FAE5724D95E0300974D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B98FAE5924D95E0300974D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B992260524DAA7A4004F3343 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBackgroundShape.swift; sourceTree = "<group>"; };
 		B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
 		B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingTipShape.swift; sourceTree = "<group>"; };
+		B9D7ADFB24DD4085005E31DF /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +82,13 @@
 				B945C52624DA8D5B001EA436 /* ActivityData.swift */,
 				B945C52824DA95BE001EA436 /* ColorExtension.swift */,
 				B98FAE4F24D95DFE00974D20 /* ContentView.swift */,
+				B9D7ADFB24DD4085005E31DF /* BlurView.swift */,
 				B945C52224DA7DD4001EA436 /* RingView.swift */,
 				B9D1D6BE24D9787D005FC2C0 /* RingBackgroundShape.swift */,
 				B9D1D6C024D97E4C005FC2C0 /* RingShape.swift */,
 				B9D1D6C224D985E9005FC2C0 /* RingTipShape.swift */,
+				B992260524DAA7A4004F3343 /* ChartView.swift */,
+				B9773BA024DD2394006812B3 /* StandChartView.swift */,
 				B98FAE5124D95E0300974D20 /* Assets.xcassets */,
 				B98FAE5624D95E0300974D20 /* LaunchScreen.storyboard */,
 				B98FAE5924D95E0300974D20 /* Info.plist */,
@@ -173,8 +182,11 @@
 				B9D1D6BF24D9787D005FC2C0 /* RingBackgroundShape.swift in Sources */,
 				B945C52324DA7DD4001EA436 /* RingView.swift in Sources */,
 				B98FAE4E24D95DFE00974D20 /* SceneDelegate.swift in Sources */,
+				B992260624DAA7A4004F3343 /* ChartView.swift in Sources */,
 				B98FAE5024D95DFE00974D20 /* ContentView.swift in Sources */,
+				B9D7ADFC24DD4085005E31DF /* BlurView.swift in Sources */,
 				B945C52524DA8C2F001EA436 /* Constants.swift in Sources */,
+				B9773BA124DD2394006812B3 /* StandChartView.swift in Sources */,
 				B945C52924DA95BE001EA436 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
