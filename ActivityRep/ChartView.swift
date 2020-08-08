@@ -55,6 +55,7 @@ struct BarChartView: View {
         let maxColumnIndex = Constants.barChartColumns - 1
         
         return ZStack(alignment: .bottomLeading) {
+            // chart four horizontal dot lines
             VStack(alignment: .center, spacing: 20) {
                 HStack(alignment: .center, spacing: Constants.barChartColumnWidth) {
                     ForEach(0..<maxColumnIndex) { i in
@@ -86,7 +87,7 @@ struct BarChartView: View {
                     }
                 }
             }
-            
+            // chart bars
             HStack(alignment: .bottom, spacing: Constants.barChartColumnSpacing) {
                 ForEach(0..<maxColumnIndex) { i in
                     BarChartBarView(height: data[i] ?? Double(0), startColor: barStartColor, endColor: barEndColor)

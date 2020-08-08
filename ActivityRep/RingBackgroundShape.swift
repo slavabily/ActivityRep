@@ -20,8 +20,3 @@ struct RingBackgroundShape: Shape {
     }
 }
 
-struct RingBackgroundShape_Previews: PreviewProvider {
-    static var previews: some View {
-        RingBackgroundShape(thickness: 1)
-    }
-}

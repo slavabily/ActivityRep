@@ -18,7 +18,7 @@ struct ActivityData {
         (firstLetter: "S", movePercentage: 1.5, exercisePercentage: 0.4, standPercentage: 1.5)
     ]
     
-    static let ringsPercentage: (movePercentage: Double, exercisePercentage: Double, standPercentage: Double) = (movePercentage: 1.1, exercisePercentage: 1.8, standPercentage: 1.5)
+    static let ringsPercentage: (movePercentage: Double, exercisePercentage: Double, standPercentage: Double) = (movePercentage: 0.7, exercisePercentage: 0.5, standPercentage: 0.8)
     
     static let moveChartData: [Int: Double] = [
         20: Double.random(in: 0...60),

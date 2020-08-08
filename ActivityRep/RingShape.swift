@@ -30,8 +30,4 @@ struct RingShape: Shape {
     }
 }
 
-struct RingShape_Previews: PreviewProvider {
-    static var previews: some View {
-        RingShape(currentPercentage: 50, thickness: 5)
-    }
-}
+ 
