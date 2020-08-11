@@ -9,6 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    enum WeekDays: Int {
+        case Monday, Tuesday, Wednsday, Thursday, Friday, Satuday, Sunday
+    }
+    
+    @State private var weekDay: Int = WeekDays.Monday.rawValue
+        
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .top, content: {
@@ -17,43 +23,186 @@ struct ContentView: View {
                     VStack {
                         Spacer(minLength: Constants.navigationBarHeight).frame(width: geometry.size.width, height: Constants.navigationBarHeight, alignment: .top)
                         
-                        self.createRings()
+                        switch weekDay {
+                        case 0:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[0].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[0].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[0].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        case 1:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[1].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[1].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[1].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        case 2:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[2].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[2].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[2].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        case 3:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[3].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[3].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[3].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        case 4:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[4].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[4].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[4].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        case 5:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[5].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[5].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[5].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        case 6:
+                            createRings(
+                                standPercentage: ActivityData.weekdays[6].standPercentage,   standBackgroundColor: .standRingWeekdayBackground,
+                                standStartColor: .standRingStartColor,
+                                standEndColor: .standRingEndColor,
+                                
+                                exePercentage: ActivityData.weekdays[6].exercisePercentage,
+                                exeBackgroundColor: .exerciseRingWeekdayBackground,
+                                exeStartColor: .exerciseRingStartColor,
+                                exeEndColor: .exerciseRingEndColor,
+                                
+                                movePercentage: ActivityData.weekdays[6].movePercentage,
+                                moveBackgroundColor: .moveRingWeekdayBackground,
+                                moveStartColor: .moveRingStartColor,
+                                moveEndColor: .moveRingEndColor,
+                                thickness: Constants.mainRingThickness
+                            )
+                        default:
+                            createRings()
+                        }
+                        
                         self.createCharts()
                         self.createFooter()
                     }
+                    
+                    
                 }
                 self.createNavigationBar(geometry.size)
             })
         }
     }
     
-    func createRings() -> some View {
+    func createRings(
+        standPercentage: Double = ActivityData.ringsPercentage.standPercentage,
+        standBackgroundColor: Color = .standRingBackground,
+        standStartColor: Color = .standRingStartColor,
+        standEndColor: Color = .standRingEndColor,
+        
+        exePercentage: Double = ActivityData.ringsPercentage.exercisePercentage,
+        exeBackgroundColor: Color = .exerciseRingBackground,
+        exeStartColor: Color = .exerciseRingStartColor,
+        exeEndColor: Color = .exerciseRingEndColor,
+        
+        movePercentage: Double = ActivityData.ringsPercentage.movePercentage,
+        moveBackgroundColor: Color = .moveRingBackground,
+        moveStartColor: Color = .moveRingStartColor,
+        moveEndColor: Color = .moveRingEndColor,
+        
+        thickness: CGFloat = Constants.mainRingThickness
+        ) -> some View {
         ZStack {
             RingView(
-                percentage: ActivityData.ringsPercentage.standPercentage,
-                backgroundColor: Color.standRingBackground,
-                startColor: Color.standRingStartColor,
-                endColor: Color.standRingEndColor,
-                thickness: Constants.mainRingThickness)
-                .frame(width: 150, height: 150)
-                .aspectRatio(contentMode: .fit)
+                percentage: standPercentage,
+                backgroundColor: standBackgroundColor,
+                startColor: standStartColor,
+                endColor: standEndColor,
+                thickness: thickness
+            )
+            .frame(width: 150, height: 150)
+            .aspectRatio(contentMode: .fit)
             
             RingView(
-                percentage: ActivityData.ringsPercentage.exercisePercentage,
-                backgroundColor: Color.exerciseRingBackground,
-                startColor: Color.exerciseRingStartColor,
-                endColor: Color.exerciseRingEndColor,
-                thickness: Constants.mainRingThickness
+                percentage: exePercentage,
+                backgroundColor: exeBackgroundColor,
+                startColor: exeStartColor,
+                endColor: exeEndColor,
+                thickness: thickness
             )
             .frame(width: 215, height: 215)
             .aspectRatio(contentMode: .fit)
             
             RingView(
-                percentage: ActivityData.ringsPercentage.movePercentage,
-                backgroundColor: Color.moveRingBackground,
-                startColor: Color.moveRingStartColor,
-                endColor: Color.moveRingEndColor,
-                thickness: Constants.mainRingThickness
+                percentage: movePercentage,
+                backgroundColor: moveBackgroundColor,
+                startColor: moveStartColor,
+                endColor: moveEndColor,
+                thickness: thickness
             )
             .frame(width: 280, height: 280)
             .aspectRatio(contentMode: .fit)
@@ -193,6 +342,9 @@ struct ContentView: View {
                                 )
                                 .frame(width: 40, height: 40)
                                 .aspectRatio(contentMode: .fit)
+                            }
+                            .onTapGesture {
+                                weekDay = item
                             }
                         }
                     }
