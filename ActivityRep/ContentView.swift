@@ -346,6 +346,8 @@ struct ContentView: View {
                             .onTapGesture {
                                 weekDay = item
                             }
+                            .blur(radius: weekDay == item ? 2 : 0)
+                            
                         }
                     }
                 }
