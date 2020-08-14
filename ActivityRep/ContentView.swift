@@ -23,6 +23,7 @@ struct ContentView: View {
                     VStack {
                         Spacer(minLength: Constants.navigationBarHeight).frame(width: geometry.size.width, height: Constants.navigationBarHeight, alignment: .top)
                         
+                 // creation of rings in dependance of selected weekday
                         switch weekDay {
                         case 0:
                             createRings(
@@ -158,6 +159,7 @@ struct ContentView: View {
         }
     }
     
+    //  function of rings creation with default parameters
     func createRings(
         standPercentage: Double = ActivityData.ringsPercentage.standPercentage,
         standBackgroundColor: Color = .standRingBackground,
@@ -343,11 +345,12 @@ struct ContentView: View {
                                 .frame(width: 40, height: 40)
                                 .aspectRatio(contentMode: .fit)
                             }
+                            // binding of weekDay property to selection of particulary day in navigation bar
                             .onTapGesture {
                                 weekDay = item
                             }
+                            // making ring diagram of  weekday blured once selected
                             .blur(radius: weekDay == item ? 2 : 0)
-                            
                         }
                     }
                 }
